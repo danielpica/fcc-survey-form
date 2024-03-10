@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  font-family: Impact;
+  font-size: 18px
+}
+
+label {
+  display: block;
+  align-items: center;
+  
+}
+
+#survey-form {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+
+.form-group {
+  border: 2px solid;
+  display: block;
+  align-content: center;
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.form-group .submit-button {
+  display: block;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+    </style>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">
+  <h1 id="title" class="text-center">Foodie Survey Form</h1>
+    <p id="description" class="description text-center">Thank you for taking the time to fill out this form, and getting Hungry?</p>
+    </header>
+      <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required></div>
+        <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+          <input id="email" name="email-label" type="email" class="form-control" placeholder="Enter your email" required></div>
+          <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+          <input id="number" name="number-label" type="number" class="form-control" placeholder="Age" pattern"[0-120]" min="10" max="120"></div>
+   <div class="form-group">
+     <p>What is your favaorite food?</p>
+     <select id="dropdown" name="food" class="form-control" required>
+       <option disabled selected value> Pick a food </option>
+       <option>Pizza</option>
+       <option>Tacos</option>
+       <option>Spaghetti</option>
+       <option>Cheeseburger<option>
+       <option>Other</option>
+       </select> 
+       </div>
+       <div class="form-group">
+         <p>Could you eat 4 hot dogs in less than 5 minutes?</p>
+         <label>
+           <input name="can-you-eat" value="Oh Yeah" type="radio" class="input-radio" checked>Oh Yeah</label>
+           <label>
+             <input name="can-you-eat" value="I think so?" type="radio" class="input-radio">I think so?</label>
+             <label>
+               <input name="can-you-eat" value="No way Jose!" type="radio" class="input-radio">No way Jose!</label>
+               </div>
+               <div class="form-group">
+                 <p>Which chain has the best French Fries?</p>
+                 <select id="best-fries" name="bestFries" class="form-control" required>
+                   <option disabled selected value>Select and option</option>
+                   <option value="arbys">Arby's</option>
+                   <option value="mcdonalds">McDonald's</option>
+                   <option value="rallys">Rally's</option>
+                   <option value="wendys">Wendy's</option>
+                   </select>
+                   </div>
+                   <div class="form-group">
+                     <p>What are your favorite Pizza toppings?<span class="clue">(Check all that apply)</span></p>
+                     <label>
+                       <input name="prefer" value="pepperoni" type="checkbox" class="input-checkbox">Pepperoni</label>
+                       <input name="prefer" value="mushrooms" type="checkbox" class="input-checkbox">Mushrooms</label>
+                       <input name="prefer" value="green-pepper" type="checkbox" class="input-checkbox">Green Pepper</label>
+                       <input name="prefer" value="onion" type="checkbox" class="input-checkbox">Onion</label>
+                       <input name="prefer" value="bacon" type="checkbox" class="input-checkbox">Bacon</label>
+                       <input name="prefer" value="pineapple" type="checkbox" class="input-checkbox">Pineapple</label>
+                       </div>
+                       <div class="form-group">
+                         <p>Tell me the meal you want for your last day on earth.</p>
+                         <textarea id="comments" class="input-textarea" name="last-meal" placeholder="Enter your last meal here..."></textarea>
+                         <div class="form-group">
+                           <button type="submit" id="submit" class="submit-button">Submit</button>
+                           </div>
+                           
+</form>
+</div>
+  </body>
+  </html>
